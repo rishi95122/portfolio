@@ -1,0 +1,232 @@
+.about{
+   margin:120px 20px;
+   margin-bottom: 0px;
+   h1{
+    font-size:xxx-large;
+    border-bottom: 4px solid black;
+    border-bottom-right-radius: 50px ;
+    font-weight: 200;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   } 
+   p{
+    font-size: x-large;
+    color: gray;
+    line-height: 28px;
+   }
+     .personal-info {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+       
+        .personal-info::after {
+            content: '';
+            flex-grow: 1;
+            height: 2px;
+            background: black;
+        }
+
+
+        .personal-info::after {
+            margin-left: 10px;}
+   .personal-details{
+    display: flex;
+    justify-content: space-evenly;
+    .blocks{
+        span{
+            display: flex;
+            p{
+                font-size: large;
+                text-wrap: nowrap;
+            }
+            p:nth-child(1){
+                font-weight: 500;
+                color: black;
+            }
+        }
+    }
+   }
+   .programming-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    gap:10px;
+    span{
+      border: 2px solid rgb(232, 223, 223);
+        width: 100px;
+        text-align: center;
+        padding: 40px 0px;
+        border-radius: 50%;
+        p{
+            color: black;
+            margin: 0px;
+            font-size: large;
+            font-weight: bold;
+        }
+        &:hover{
+            background-color: black;
+            transform: scale(1.1);
+            transition: transform 0.5s ease-in-out;
+            p{
+                color: white;
+                
+            }
+        }
+    }
+   }
+   .eduexp{
+    display: flex;
+   gap:30px;
+    .edu,.exp{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        .single-edu{
+            border: 1px solid rgb(210, 208, 208);
+            padding: 10px 15px;
+            position: relative;
+            position: relative;
+            display: inline-block; /* Or block if you need it to be a block element */
+          
+            overflow: hidden; 
+            span{
+                position: absolute;
+                right: 10px;
+                top:3px;
+                background-color: rgb(166, 130, 251);
+                padding: 5px;
+                border-radius: 10px;
+                color: white;
+                font-size: small;
+              
+            }
+            .year{
+                margin-top: 20px;
+                background-color: rgb(229, 228, 228);
+                width: fit-content;
+                padding: 10px 20px;
+                font-size: large;
+                color: black;
+                font-weight: 300;
+            }
+            p{
+                font-size: large;
+            }
+        }
+        
+.single-edu::before,
+.single-edu::after {
+  content: "";
+  position: absolute;
+  background: black;
+  transition: all 0.3s ease;
+}
+
+.single-edu::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Border thickness for top */
+  transform: scaleX(0); /* Starts hidden */
+  transform-origin: left;
+}
+
+.single-edu::after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Border thickness for bottom */
+  transform: scaleX(0); /* Starts hidden */
+  transform-origin: right;
+}
+
+.single-edu::after {
+  top: 0;
+  left: 0;
+  width: 1px; /* Border thickness for left */
+  height: 100%;
+  transform: scaleY(0); /* Starts hidden */
+  transform-origin: top;
+}
+
+.single-edu::after {
+  top: 0;
+  right: 0;
+  width: 1px; /* Border thickness for right */
+  height: 100%;
+  transform: scaleY(0); /* Starts hidden */
+  transform-origin: bottom;
+}
+
+.single-edu:hover::before {
+  transform: scaleX(1); /* Expands top border on hover */
+}
+
+.single-edu:hover::after {
+  transform: scaleX(1); /* Expands bottom border on hover */
+}
+
+.single-edu:hover::before {
+  transform: scaleY(1); /* Expands left border on hover */
+}
+
+.single-edu:hover::after {
+  transform: scaleY(1); /* Expands right border on hover */
+}
+    }
+   }
+   .interest{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:20px;
+    .in-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            margin: 0px;
+            font-size: large;
+            color: black;
+            font-weight: bold;
+        }
+        .span{
+            border: 2px solid rgb(232, 223, 223);
+              width: 100px;
+              text-align: center;
+              padding: 30px 0px;
+              border-radius: 50%;
+              
+              p{
+                  color: black;
+                  margin: 0px;
+                  font-size: large;
+                  font-weight: bold;
+              }
+              &:hover{
+                  background-color: black;
+                  transform: scale(1.1);
+                  transition: transform 0.5s ease-in-out;
+                  p{
+                      color: white;
+                      
+                  }
+                  .icon{
+                    color:white;
+                  }
+              }
+        }
+   }
+}}
+
+@media only screen and (max-width:670px){
+    .personal-details{
+        display: flex;
+        flex-direction: column;
+       
+}
+}

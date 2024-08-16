@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 2px solid black;
+    width: 58%;
+    background-color: rgb(255, 255, 255);
+ z-index: 1;
+ transition: transform 0.3s ease;
+    .nav-icon{
+      
+        width:50px;
+        text-align: center;
+        border-radius: 50%;
+        padding: 5px 0px;
+        border:3px solid rgb(0, 0, 0);
+        margin-left: 10px;
+      &:hover{
+       
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+}
+@media only screen and (max-width:1230px){
+  
+    .navbar{
+      width: 100%;
+    }
+  }

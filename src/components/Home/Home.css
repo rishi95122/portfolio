@@ -1,0 +1,10 @@
+.home{
+
+    width: 58%;
+}
+@media only screen and (max-width:1230px){
+  
+    .home{
+      width: 100%;
+    }
+  }
