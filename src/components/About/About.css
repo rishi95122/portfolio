@@ -10,7 +10,7 @@
    } 
    p{
     font-size: x-large;
-    color: gray;
+    
     line-height: 28px;
    }
      .personal-info {
@@ -55,11 +55,12 @@
     align-items: center;justify-content: center;
     gap:10px;
     span{
-      border: 2px solid rgb(232, 223, 223);
+      border: 2px solid rgb(0, 0, 0);
         width: 100px;
         text-align: center;
         padding: 40px 0px;
         border-radius: 50%;
+        box-shadow: 0.5px 0.5px 2px;
         p{
             color: black;
             margin: 0px;
@@ -91,7 +92,7 @@
             position: relative;
             position: relative;
             display: inline-block; /* Or block if you need it to be a block element */
-          
+            box-shadow: 0.5px 0.5px 2px;
             overflow: hidden; 
             span{
                 position: absolute;
@@ -106,7 +107,7 @@
             }
             .year{
                 margin-top: 20px;
-                background-color: rgb(229, 228, 228);
+                background-color: rgb(126, 186, 255);
                 width: fit-content;
                 padding: 10px 20px;
                 font-size: large;
@@ -188,6 +189,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         p{
             margin: 0px;
             font-size: large;
@@ -195,12 +197,12 @@
             font-weight: bold;
         }
         .span{
-            border: 2px solid rgb(232, 223, 223);
+            border: 2px solid rgb(0, 0, 0);
               width: 100px;
               text-align: center;
               padding: 30px 0px;
               border-radius: 50%;
-              
+              box-shadow: 0.5px 0.5px 2px;
               p{
                   color: black;
                   margin: 0px;

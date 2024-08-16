@@ -8,14 +8,12 @@ const About = () => {
     <div className="about">
       <h1>About</h1>
       <p>
-        I am a junior software developer and crypto trader based in Banjarmasin.
-        I've been involved in creating noteworthy software solutions and trading
-        strategies for years, in line with the latest trends in the technology
-        and cryptocurrency market. My passion lies in converting an idea into
-        meaningful and useful products. My experience in software development
-        and crypto trading, combined with a sharp eye for market evolution,
-        helps me prioritize tasks and adapt quickly. I also occasionally work as
-        a freelancer, offering my expertise to those who need it.
+      Hello! I'm Uditya Kumar, a passionate and motivated fresher with a strong foundation in both front-end and back-end technologies. I recently completed my Master's degree in Computer Application from Graphic Era Hill University, where I gained hands-on experience in creating immersive digital experiences.
+
+On the front end, I'm skilled in HTML, CSS, JavaScript, and React, allowing me to design dynamic and responsive user interfaces. My backend expertise includes working with Node.js, Express.js, and MongoDB, enabling me to develop robust and scalable server-side applications.
+</p>
+<p>
+I'm eager to contribute my skills and grow as a developer, bringing fresh ideas and enthusiasm to the team.
       </p>
       <h3 className="personal-info">PERSONAL INFORMATION</h3>
       <div className="personal-details">
