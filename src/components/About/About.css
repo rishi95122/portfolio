@@ -37,15 +37,15 @@
     justify-content: space-evenly;
     .blocks{
         span{
-            display: flex;
+            display: grid;
+            grid-template-columns:   30% 70%;
+            
             p{
                 font-size: large;
-                text-wrap: nowrap;
+               overflow: hidden;
+              
             }
-            p:nth-child(1){
-                font-weight: 500;
-                color: black;
-            }
+           
         }
     }
    }
@@ -82,7 +82,7 @@
     display: flex;
    gap:30px;
     .edu,.exp{
-        width: 50%;
+        width: auto;
         display: flex;
         flex-direction: column;
         gap:10px;
@@ -107,10 +107,10 @@
             }
             .year{
                 margin-top: 20px;
-                background-color: rgb(126, 186, 255);
+                background-color: rgb(234, 234, 234);
                 width: fit-content;
                 padding: 10px 20px;
-                font-size: large;
+                font-size: smaller;
                 color: black;
                 font-weight: 300;
             }
@@ -225,10 +225,25 @@
    }
 }}
 
-@media only screen and (max-width:670px){
+@media only screen and (max-width:600px){
     .personal-details{
         display: flex;
         flex-direction: column;
        
+}
+
+}
+
+@media only screen and (max-width:400px){
+
+.eduexp{
+display: flex;
+flex-direction: column;
+gap:30px;
+
+
+  .edu,.exp{
+ width: 100%;
+}
 }
 }
