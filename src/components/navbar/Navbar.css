@@ -5,7 +5,7 @@
     position: fixed;
     border-bottom: 2px solid black;
     width: 58%;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, #ffffff 0%, #a8ceff 100%);
  z-index: 1;
  transition: transform 0.3s ease;
     .nav-icon{

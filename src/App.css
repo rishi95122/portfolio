@@ -5,7 +5,11 @@ body{
   p{
     color: rgb(68, 68, 68);
   }
-  background: radial-gradient(circle, rgba(75,137,242,1) 0%, rgba(255,255,255,1) 73%);
+  background-image: linear-gradient(to top, #ffffff 0%, #378eff 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
   .app{
     display: flex;
     width:"100%";

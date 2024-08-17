@@ -1,8 +1,9 @@
 const SecureImage = ({ src, alt }) => (
-    <div style={{ position: 'relative', display: 'inline-block',height:'100%',width:'100%' }}>
+    <div  style={{ position: 'relative', display: 'inline-block',height:'100%',width:'100%' }}>
       <img 
         src={src} 
         alt={alt} 
+        className="profile-image"
         onContextMenu={(e) => e.preventDefault()} 
         draggable="false" 
       />

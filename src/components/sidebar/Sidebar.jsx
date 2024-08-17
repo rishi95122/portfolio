@@ -6,6 +6,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6';
 import { RiInstagramFill } from 'react-icons/ri';
 import { BiBorderBottom } from 'react-icons/bi';
+import SecureImage from '../SecureImage';
+import img from '../../assets/i2.jpeg'
+
 const Sidebar = ({open,setOPen}) => {
   const params = useLocation().pathname
   
@@ -23,7 +26,7 @@ const Sidebar = ({open,setOPen}) => {
         </button>
         <div className='content'>
         <div className="profile-section">
-          <img src="https://mrwallpaper.com/images/hd/jamie-foxx-comedic-photoshoot-eygbtw4thw1sfna1.jpg" alt="Profile" className="profile-image" />
+<SecureImage src={img}  className='profile-image'/>
           <div className='icons'>
         <Link target='_blank' className='link' to='https://github.com/rishi95122'>
         <FaGithub className='btn' size={30}/>
