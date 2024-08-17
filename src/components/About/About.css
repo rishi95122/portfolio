@@ -80,9 +80,11 @@
    }
    .eduexp{
     display: flex;
+    justify-content: space-around;
+  
    gap:30px;
     .edu,.exp{
-        width: auto;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap:10px;
