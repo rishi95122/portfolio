@@ -49,10 +49,12 @@ margin-bottom: 10px;
     flex-direction: column;
         width:50%;
         text-align: left;
+        h1{
+          font-size: x-large
+        }
         p{
-            margin: 0px;
-            font-size: x-large;
-          
+          margin: 0px;
+          font-size: large;
         }
       }
       
@@ -77,19 +79,27 @@ margin-bottom: 10px;
 
       @media only screen and (max-width: 1230px) {
         .fopy-container {
-            
+         margin:0px 100px;
           display: flex;
          flex-direction: column;
             gap:0px;
             .fopy-logo{
                 width: 100%;
                 border-radius: 10px;
-               
+               height:250px
               }
               .fopy-content{
               width: 90%;
-              
+             
               }
           }
         
     }
+
+    @media only screen and (max-width: 670px) {
+      .fopy-container {
+      margin: 0px;
+       
+        }
+      
+  }
